@@ -129,8 +129,6 @@ def search(values):
         return values
 
     n, s = min((len(values[s]), s) for s in boxes if len(values[s]) > 1)
-    print('n: ' + n)
-    print('s: ' + s)
 
     for value in values[s]:
         new_sudoku = values.copy()
